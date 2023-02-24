@@ -1,6 +1,7 @@
 :root {
     --off-white: #faf9f6;
     --goldish: #ff9923;
+    font-family: 'Lora';
 }
 
 /* lora-regular - latin */
@@ -29,4 +30,14 @@
     font-weight: 700;
     src: url('../fonts/lora-v32-latin-700.woff2') format('woff2');
     /* Chrome 36+, Opera 23+, Firefox 39+ */
+}
+
+header {
+    background-color: black;
+}
+
+h1 {
+    color: var(--goldish);
+    font-size: 36px;
+    font-weight: 700;
 }
