@@ -34,10 +34,22 @@
 
 header {
     background-color: black;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
 }
 
 h1 {
+    grid-column: 1/2;
     color: var(--goldish);
-    font-size: 36px;
+    font-size: 2.25rem;
     font-weight: 700;
+}
+
+.nav-bar {
+    grid-column: 2/3;
+    color: var(--off-white);
+    font-weight: 700;
+    font-size: 1.25rem;
+    display: flex;
+    justify-content: space-evenly;
 }
