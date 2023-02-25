@@ -13,7 +13,7 @@ const nav = document.createElement('nav');
 header.append(restaurant, nav);
 
 const navlist = document.createElement('ul');
-navlist.classList.add('nav-bar');
+navlist.classList.add('nav-list');
 nav.append(navlist);
 
 const li1 = document.createElement('li');
