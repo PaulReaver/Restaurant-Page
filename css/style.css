@@ -52,3 +52,8 @@ h1 {
     display: flex;
     justify-content: space-evenly;
 }
+
+.active-tab {
+    color: var(--goldish);
+    border-bottom: 1px solid var(--goldish);
+}
