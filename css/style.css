@@ -76,6 +76,12 @@ h1 {
     padding: 0.25em 0.75em;
 }
 
+@media (hover: hover) {
+    .non-active-tab:hover {
+        color: lightgray;
+    }
+}
+
 .active-tab {
     color: var(--goldish);
     border-bottom: 1px solid var(--goldish);
@@ -108,4 +114,10 @@ h1 {
     background-color: var(--goldish);
     border-radius: 0.25em;
     padding: 0.5em 0.75em;
+}
+
+@media (hover: hover) {
+    .order-link:hover {
+        filter: brightness(80%);
+    }
 }
