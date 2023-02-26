@@ -71,3 +71,19 @@ h1 {
     color: var(--goldish);
     border-bottom: 1px solid var(--goldish);
 }
+
+.main-home {
+    margin: 15rem 16.875rem;
+}
+
+.secondary-text {
+    color: lightgray;
+    font-style: italic;
+    font-size: 1.5rem;
+}
+
+.primary-text {
+    color: var(--off-white);
+    font-weight: 700;
+    font-size: 4.5rem;
+}
