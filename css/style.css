@@ -29,6 +29,16 @@
     src: url('../fonts/lora-v32-latin-700.woff2') format('woff2');
 }
 
+body::after {
+    content: url('../images/food-home.webp') url('../images/food-menu.webp')
+        url('../images/food-contact.webp');
+    position: absolute;
+    width: 0;
+    height: 0;
+    overflow: hidden;
+    z-index: -1;
+}
+
 header {
     background-color: black;
 }
