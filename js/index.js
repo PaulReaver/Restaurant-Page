@@ -20,43 +20,43 @@ const li1 = document.createElement('li');
 const li2 = document.createElement('li');
 const li3 = document.createElement('li');
 navlist.append(li1, li2, li3);
-const tab1 = document.createElement('a');
-tab1.classList.add('active-tab');
-tab1.append('Home');
-li1.append(tab1);
-const tab2 = document.createElement('a');
-tab2.classList.add('non-active-tab');
-tab2.append('Menu');
-li2.append(tab2);
-const tab3 = document.createElement('a');
-tab3.classList.add('non-active-tab');
-tab3.append('Contact');
-li3.append(tab3);
-tab1.href = '#';
-tab2.href = '#';
-tab3.href = '#';
+const tabHome = document.createElement('a');
+tabHome.classList.add('active-tab');
+tabHome.append('Home');
+li1.append(tabHome);
+const tabMenu = document.createElement('a');
+tabMenu.classList.add('non-active-tab');
+tabMenu.append('Menu');
+li2.append(tabMenu);
+const tabContact = document.createElement('a');
+tabContact.classList.add('non-active-tab');
+tabContact.append('Contact');
+li3.append(tabContact);
+tabHome.href = '#';
+tabMenu.href = '#';
+tabContact.href = '#';
 
 // Event listeners to declare a tab as active
-tab1.addEventListener('click', () => {
-    if (tab1.className !== 'active-tab') {
-        tab1.className = 'active-tab';
-        tab2.className = 'non-active-tab';
-        tab3.className = 'non-active-tab';
+tabHome.addEventListener('click', () => {
+    if (tabHome.className !== 'active-tab') {
+        tabHome.className = 'active-tab';
+        tabMenu.className = 'non-active-tab';
+        tabContact.className = 'non-active-tab';
     }
 });
 
-tab2.addEventListener('click', () => {
-    if (tab2.className !== 'active-tab') {
-        tab2.className = 'active-tab';
-        tab1.className = 'non-active-tab';
-        tab3.className = 'non-active-tab';
+tabMenu.addEventListener('click', () => {
+    if (tabMenu.className !== 'active-tab') {
+        tabMenu.className = 'active-tab';
+        tabHome.className = 'non-active-tab';
+        tabContact.className = 'non-active-tab';
     }
 });
 
-tab3.addEventListener('click', () => {
-    if (tab3.className !== 'active-tab') {
-        tab3.className = 'active-tab';
-        tab1.className = 'non-active-tab';
-        tab2.className = 'non-active-tab';
+tabContact.addEventListener('click', () => {
+    if (tabContact.className !== 'active-tab') {
+        tabContact.className = 'active-tab';
+        tabHome.className = 'non-active-tab';
+        tabMenu.className = 'non-active-tab';
     }
 });
