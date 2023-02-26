@@ -80,10 +80,13 @@ h1 {
     color: lightgray;
     font-style: italic;
     font-size: 1.5rem;
+    line-height: calc(1em + 0.5rem);
+    margin-bottom: 1rem;
 }
 
 .primary-text {
     color: var(--off-white);
     font-weight: 700;
     font-size: 4.5rem;
+    line-height: calc(1em + 0.5rem);
 }
