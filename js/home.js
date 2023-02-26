@@ -1,5 +1,5 @@
-// Get body and create main element
-const body = document.querySelector('body');
+// Get body and content div and create main element
+const content = document.querySelector('#content');
 const mainHome = document.createElement('main');
 mainHome.classList.add('main-home');
 
@@ -23,7 +23,8 @@ orderLink.append('Order Now');
 // Populates page
 export default function populateHome() {
     document.body.style.backgroundImage = "url('../images/food-home.webp')";
-    body.append(mainHome);
+    content.replaceChildren();
+    content.append(mainHome);
     mainHome.append(secondaryText);
     mainHome.append(primaryText);
     mainHome.append(orderLink);
