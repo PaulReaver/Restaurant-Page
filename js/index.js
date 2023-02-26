@@ -5,14 +5,17 @@ import '../css/style.css';
 const body = document.querySelector('body');
 const header = document.createElement('header');
 body.prepend(header);
+const headerWrapper = document.createElement('div');
+headerWrapper.classList.add('header-wrapper');
+header.append(headerWrapper);
 
-// Create and append restaurant logo
+// Create and append restaurant logo and navbar
 const restaurant = document.createElement('h1');
 restaurant.append('Restaurant');
-
-// Create and append navbar
 const nav = document.createElement('nav');
-header.append(restaurant, nav);
+headerWrapper.append(restaurant, nav);
+
+// Create and append navlist
 const navlist = document.createElement('ul');
 navlist.classList.add('nav-list');
 nav.append(navlist);
