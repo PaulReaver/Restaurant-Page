@@ -14,10 +14,17 @@ primaryText.classList.add('primary-text');
 const br = document.createElement('br');
 primaryText.append('Premium tastes', br, 'that feel like home!');
 
+// Create CTA link
+const orderLink = document.createElement('a');
+orderLink.classList.add('order-link');
+orderLink.href = '#';
+orderLink.append('Order Now');
+
 // Populates page
 export default function populateHome() {
     document.body.style.backgroundImage = "url('../images/food-home.webp')";
     body.append(mainHome);
     mainHome.append(secondaryText);
     mainHome.append(primaryText);
+    mainHome.append(orderLink);
 }
