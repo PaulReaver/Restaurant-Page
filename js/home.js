@@ -1,4 +1,4 @@
-// Get body and content div and create main element
+// Get content div and create main element
 const content = document.querySelector('#content');
 const mainHome = document.createElement('main');
 mainHome.classList.add('main-home');
