@@ -67,6 +67,10 @@ h1 {
     justify-content: space-evenly;
 }
 
+.nav-list > li > a {
+    padding: 0.25em 0.75em;
+}
+
 .active-tab {
     color: var(--goldish);
     border-bottom: 1px solid var(--goldish);
