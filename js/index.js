@@ -1,6 +1,10 @@
 import '../css/reset.css';
 import '../css/style.css';
 
+import populateHome from './home';
+import populateMenu from './menu';
+import populateContact from './contact';
+
 // Create and append header
 const body = document.querySelector('body');
 const header = document.createElement('header');
@@ -39,12 +43,16 @@ tabHome.href = '#';
 tabMenu.href = '#';
 tabContact.href = '#';
 
+// Initial home population
+populateHome();
+
 // Event listeners to declare a tab as active
 tabHome.addEventListener('click', () => {
     if (tabHome.className !== 'active-tab') {
         tabHome.className = 'active-tab';
         tabMenu.className = 'non-active-tab';
         tabContact.className = 'non-active-tab';
+        populateHome();
     }
 });
 
@@ -53,6 +61,7 @@ tabMenu.addEventListener('click', () => {
         tabMenu.className = 'active-tab';
         tabHome.className = 'non-active-tab';
         tabContact.className = 'non-active-tab';
+        populateMenu();
     }
 });
 
@@ -61,5 +70,6 @@ tabContact.addEventListener('click', () => {
         tabContact.className = 'active-tab';
         tabHome.className = 'non-active-tab';
         tabMenu.className = 'non-active-tab';
+        populateContact();
     }
 });
