@@ -39,6 +39,11 @@ body::after {
     z-index: -1;
 }
 
+::selection {
+    color: black;
+    background-color: var(--goldish);
+}
+
 header {
     background-color: black;
 }
