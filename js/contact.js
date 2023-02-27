@@ -3,57 +3,64 @@ const content = document.querySelector('#content');
 const mainContact = document.createElement('main');
 mainContact.classList.add('main-contact');
 
-const openingHoursContainer = document.createElement('section');
-openingHoursContainer.classList.add('glass-container');
+const information = [];
+const informationTitles = [];
+const informationSubtitles = [];
+const informationDescriptions = [];
 
-// Create Opening hours title
-const openingHoursTitle = document.createElement('h2');
-openingHoursTitle.classList.add('glass-title');
-openingHoursTitle.append('Opening Hours');
+// Create information containers
+for (let i = 0; i < 2; i += 1) {
+    information[i] = document.createElement('section');
+    information[i].classList.add('glass-container');
+}
 
-// Create Monday - Thursday title
-const mondayToThursday = document.createElement('h3');
-mondayToThursday.classList.add('glass-subtitle');
-mondayToThursday.append('Monday - Thursday');
+// Create information container titles
+for (let i = 0; i < 2; i += 1) {
+    informationTitles[i] = document.createElement('h2');
+    informationTitles[i].classList.add('glass-title');
+}
 
-// Create Monday - Thursday hours
-const mondayToThursdayHours = document.createElement('p');
-mondayToThursdayHours.classList.add('glass-description');
-mondayToThursdayHours.append('9am - 6pm');
+// Create information titles' text
+informationTitles[0].append('Opening Hours');
+informationTitles[1].append('Contact Us');
 
-// Create Friday - Saturday title
-const fridayToSaturday = document.createElement('h3');
-fridayToSaturday.classList.add('glass-subtitle');
-fridayToSaturday.append('Friday - Saturday');
+// Create information subtitles and descriptions
+for (let i = 0; i < 6; i += 1) {
+    informationSubtitles[i] = document.createElement('h3');
+    informationSubtitles[i].classList.add('glass-subtitle');
+    informationDescriptions[i] = document.createElement('p');
+    informationDescriptions[i].classList.add('glass-description');
+}
 
-// Create Friday - Saturday hours
-const fridayToSaturdayHours = document.createElement('p');
-fridayToSaturdayHours.classList.add('glass-description');
-fridayToSaturdayHours.append('9am - 11pm');
+// Append text to information subtitles and descriptions
+informationSubtitles[0].append('Monday - Thursday');
+informationDescriptions[0].append('9am - 6pm');
+informationSubtitles[1].append('Friday - Saturday');
+informationDescriptions[1].append('9am - 11pm');
+informationSubtitles[2].append('Sunday');
+informationDescriptions[2].append('Closed');
+informationSubtitles[3].append('Phone Number');
+informationDescriptions[3].append('123456789');
+informationSubtitles[4].append('Email');
+informationDescriptions[4].append('restaurant@mail.com');
+informationSubtitles[5].append('Location');
+informationDescriptions[5].append('123 East Downtown Place');
 
-// Create Sunday title
-const sunday = document.createElement('h3');
-sunday.classList.add('glass-subtitle');
-sunday.append('Sunday');
+// Append all to information containers
+for (let i = 0; i < 2; i += 1) {
+    information[i].append(informationTitles[i]);
+}
 
-// Create Sunday hours
-const sundayHours = document.createElement('p');
-sundayHours.classList.add('glass-description');
-sundayHours.append('Closed');
+for (let i = 0; i < 3; i += 1) {
+    information[0].append(informationSubtitles[i], informationDescriptions[i]);
+}
 
-// Append all days and hours to container
-openingHoursContainer.append(
-    openingHoursTitle,
-    mondayToThursday,
-    mondayToThursdayHours,
-    fridayToSaturday,
-    fridayToSaturdayHours,
-    sunday,
-    sundayHours
-);
+for (let i = 3; i < 6; i += 1) {
+    information[1].append(informationSubtitles[i], informationDescriptions[i]);
+}
 
 // Append containers to main container
-mainContact.append(openingHoursContainer);
+mainContact.append(information[0], information[1]);
 
 // Populate page
 export default function populateContact() {
