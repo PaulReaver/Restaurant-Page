@@ -52,9 +52,12 @@ openingHoursContainer.append(
     sundayHours
 );
 
+// Append containers to main container
+mainContact.append(openingHoursContainer);
+
 // Populate page
 export default function populateContact() {
     document.body.style.backgroundImage = "url('../images/food-contact.webp')";
     content.replaceChildren();
-    content.append(openingHoursContainer);
+    content.append(mainContact);
 }
