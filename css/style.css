@@ -130,7 +130,6 @@ h1 {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
     gap: 3rem;
-    backdrop-filter: blur(5px);
 }
 
 #plate-1 {
@@ -167,6 +166,7 @@ h1 {
     background-color: rgba(0, 0, 0, 0.8);
     border: 1px solid lightgray;
     border-radius: 0.6em;
+    backdrop-filter: blur(5px);
 }
 
 .plate-name {
