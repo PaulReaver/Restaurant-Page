@@ -9,14 +9,13 @@ const plateNames = [];
 const plateDescriptions = [];
 for (let i = 0; i < 6; i += 1) {
     plates[i] = document.createElement('section');
-    plates[i].classList.add('plate');
-    plates[i].id = `plate-${i + 1}`;
+    plates[i].classList.add('glass-container');
 
     plateNames[i] = document.createElement('h2');
-    plateNames[i].classList.add('plate-name');
+    plateNames[i].classList.add('glass-title');
 
     plateDescriptions[i] = document.createElement('p');
-    plateDescriptions[i].classList.add('plate-description');
+    plateDescriptions[i].classList.add('glass-description');
 
     plates[i].append(plateNames[i], plateDescriptions[i]);
 }
