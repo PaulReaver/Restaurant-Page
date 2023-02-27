@@ -162,7 +162,8 @@ h1 {
     grid-row: 3/4;
 }
 
-.plate {
+.plate,
+.working-hours {
     background-color: rgba(0, 0, 0, 0.8);
     border: 1px solid lightgray;
     border-radius: 0.6em;
@@ -179,9 +180,9 @@ h1 {
 
 .plate-description {
     font-style: italic;
-    font-size: 1rem;
+    font-size: 1.2rem;
     color: lightgray;
-    margin: 30px;
+    margin: 0rem 2rem 2rem 2rem;
     line-height: calc(1em + 0.5rem);
     max-inline-size: 66ch;
 }
