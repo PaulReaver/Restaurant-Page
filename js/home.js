@@ -20,12 +20,12 @@ orderLink.classList.add('order-link');
 orderLink.href = '#';
 orderLink.append('Order Now');
 
+// Add elements to main container
+mainHome.append(secondaryText, primaryText, orderLink);
+
 // Populates page
 export default function populateHome() {
     document.body.style.backgroundImage = "url('../images/food-home.webp')";
     content.replaceChildren();
     content.append(mainHome);
-    mainHome.append(secondaryText);
-    mainHome.append(primaryText);
-    mainHome.append(orderLink);
 }

@@ -46,12 +46,14 @@ plateDescriptions[5].append(
     `Vietnamese spring rolls, stuffed with bean thread noodles, wood ear mushrooms, grated carrot, and ground pork shoulder.`
 );
 
+// Add plates to main container
+for (let i = 0; i < 6; i += 1) {
+    mainMenu.append(plates[i]);
+}
+
 // Populate menu
 export default function populateMenu() {
     document.body.style.backgroundImage = "url('../images/food-menu.webp')";
     content.replaceChildren();
     content.append(mainMenu);
-    for (let i = 0; i < 6; i += 1) {
-        mainMenu.append(plates[i]);
-    }
 }
