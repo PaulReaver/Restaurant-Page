@@ -30,6 +30,10 @@
     src: url('../fonts/lora-v32-latin-700.woff2') format('woff2');
 }
 
+body {
+    min-height: 100vh;
+}
+
 /* Preload backgroud images so they don't flicker on load */
 body::after {
     content: url('../images/food-home.webp') url('../images/food-menu.webp')
@@ -90,7 +94,8 @@ h1 {
 }
 
 .main-home {
-    margin: 15rem 16.875rem;
+    margin-left: 15rem;
+    margin-top: 15rem;
 }
 
 .secondary-text {
@@ -132,46 +137,14 @@ h1 {
     gap: 3rem;
 }
 
-#plate-1 {
-    grid-column: 1/2;
-    grid-row: 1/2;
-}
-
-#plate-2 {
-    grid-column: 2/3;
-    grid-row: 1/2;
-}
-
-#plate-3 {
-    grid-column: 1/2;
-    grid-row: 2/3;
-}
-
-#plate-4 {
-    grid-column: 2/3;
-    grid-row: 2/3;
-}
-
-#plate-5 {
-    grid-column: 1/2;
-    grid-row: 3/4;
-}
-
-#plate-6 {
-    grid-column: 2/3;
-    grid-row: 3/4;
-}
-
-.plate,
-.opening-hours-container {
+.glass-container {
     background-color: rgba(0, 0, 0, 0.8);
     border: 1px solid lightgray;
     border-radius: 0.6em;
     backdrop-filter: blur(5px);
 }
 
-.plate-name,
-.opening-hours-title {
+.glass-title {
     color: var(--off-white);
     font-weight: 700;
     font-size: 2.5rem;
@@ -179,26 +152,18 @@ h1 {
     line-height: calc(1em + 0.5rem);
 }
 
-.plate-description {
-    font-style: italic;
-    font-size: 1.2rem;
-    color: lightgray;
-    margin: 0rem 2rem 2rem 2rem;
-    line-height: calc(1em + 0.5rem);
-    max-inline-size: 66ch;
-}
-
-.day {
+.glass-subtitle {
     color: var(--off-white);
     font-size: 1.2rem;
     font-weight: 700;
     margin-left: 2rem;
 }
 
-.hours {
+.glass-description {
+    font-style: italic;
     font-size: 1.2rem;
     color: lightgray;
-    font-style: italic;
-    margin-left: 2rem;
-    margin-bottom: 2rem;
+    margin: 0rem 2rem 2rem 2rem;
+    line-height: calc(1em + 0.5rem);
+    max-inline-size: 66ch;
 }
