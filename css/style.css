@@ -4,6 +4,7 @@
     font-family: 'Lora';
 }
 
+/* Font declarations */
 /* lora-regular - latin */
 @font-face {
     font-display: swap;
@@ -29,6 +30,7 @@
     src: url('../fonts/lora-v32-latin-700.woff2') format('woff2');
 }
 
+/* Preload backgroud images so they don't flicker on load */
 body::after {
     content: url('../images/food-home.webp') url('../images/food-menu.webp')
         url('../images/food-contact.webp');
