@@ -33,8 +33,18 @@
     src: url('../fonts/lora-v32-latin-700.woff2') format('woff2');
 }
 
+html,
 body {
-    min-height: 100vh;
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+#content {
+    height: 100%;
 }
 
 /* Preload backgroud images so they don't flicker on load */
@@ -169,4 +179,12 @@ h1 {
     margin: 0rem 2rem 2rem 2rem;
     line-height: calc(1em + 0.5rem);
     max-inline-size: 66ch;
+}
+
+.main-contact {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
 }
