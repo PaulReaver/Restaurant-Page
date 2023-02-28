@@ -62,7 +62,7 @@ header {
     grid-template-columns: repeat(3, 1fr);
     align-items: center;
     margin: 0 5rem;
-    height: 4.375rem;
+    height: 4rem;
 }
 
 h1 {
