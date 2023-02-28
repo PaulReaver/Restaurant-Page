@@ -1,6 +1,9 @@
 :root {
     --off-white: #faf9f6;
     --goldish: #ff9923;
+    --black: #000000;
+    --transparent-black: rgba(0, 0, 0, 0.8);
+    --light-gray: #d3d3d3;
     font-family: 'Lora';
 }
 
@@ -46,12 +49,12 @@ body::after {
 }
 
 ::selection {
-    color: black;
+    color: var(--black);
     background-color: var(--goldish);
 }
 
 header {
-    background-color: black;
+    background-color: var(--black);
 }
 
 .header-wrapper {
@@ -84,7 +87,7 @@ h1 {
 
 @media (hover: hover) {
     .non-active-tab:hover {
-        color: lightgray;
+        color: var(--light-gray);
     }
 }
 
@@ -99,7 +102,7 @@ h1 {
 }
 
 .secondary-text {
-    color: lightgray;
+    color: var(--light-gray);
     font-style: italic;
     font-size: 1.5rem;
     line-height: calc(1em + 0.5rem);
@@ -115,7 +118,7 @@ h1 {
 }
 
 .order-link {
-    color: black;
+    color: var(--black);
     font-weight: 700;
     font-size: 1.5rem;
     background-color: var(--goldish);
@@ -138,8 +141,8 @@ h1 {
 }
 
 .glass-container {
-    background-color: rgba(0, 0, 0, 0.8);
-    border: 1px solid lightgray;
+    background-color: var(--transparent-black);
+    border: 1px solid var(--light-gray);
     border-radius: 0.6em;
     backdrop-filter: blur(5px);
 }
@@ -162,7 +165,7 @@ h1 {
 .glass-description {
     font-style: italic;
     font-size: 1.2rem;
-    color: lightgray;
+    color: var(--light-gray);
     margin: 0rem 2rem 2rem 2rem;
     line-height: calc(1em + 0.5rem);
     max-inline-size: 66ch;
