@@ -4,7 +4,7 @@ const mainHome = document.createElement('main');
 mainHome.classList.add('main-home');
 
 // Create secondary text
-const secondaryText = document.createElement('h3');
+const secondaryText = document.createElement('p');
 secondaryText.classList.add('secondary-text');
 secondaryText.append('Distinct flavors with the most exotic aroma');
 
