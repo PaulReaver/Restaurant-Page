@@ -49,8 +49,8 @@ body {
 
 /* Preload backgroud images so they don't flicker on load */
 body::after {
-    content: url('../images/food-home.webp') url('../images/food-menu.webp')
-        url('../images/food-contact.webp');
+    content: url('../food-home.webp') url('../food-menu.webp')
+        url('../food-contact.webp');
     position: absolute;
     width: 0;
     height: 0;
