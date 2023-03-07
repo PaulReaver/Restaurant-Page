@@ -64,7 +64,7 @@ mainContact.append(information[0], information[1]);
 
 // Populate page
 export default function populateContact() {
-    document.body.style.backgroundImage = "url('../images/food-contact.webp')";
+    document.body.style.backgroundImage = "url('../food-contact.webp')";
     content.replaceChildren();
     content.append(mainContact);
 }

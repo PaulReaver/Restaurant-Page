@@ -25,7 +25,7 @@ mainHome.append(secondaryText, primaryText, orderLink);
 
 // Populates page
 export default function populateHome() {
-    document.body.style.backgroundImage = "url('../images/food-home.webp')";
+    document.body.style.backgroundImage = 'url(../food-home.webp)';
     content.replaceChildren();
     content.append(mainHome);
 }
