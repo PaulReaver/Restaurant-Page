@@ -2,7 +2,8 @@
 import { defineConfig } from 'vite';
 
 export default defineConfig({
+    base: './',
     build: {
-        base: '/restaurant-page/',
+        outDir: 'docs',
     },
 });
