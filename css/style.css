@@ -49,13 +49,23 @@ body {
 
 /* Preload backgroud images so they don't flicker on load */
 body::after {
-    content: url('../food-home.webp') url('../food-menu.webp')
-        url('../food-contact.webp');
+    content: url('../images/food-home.webp') url('../images/food-menu.webp')
+        url('../images/food-contact.webp');
     position: absolute;
     width: 0;
     height: 0;
     overflow: hidden;
     z-index: -1;
+}
+
+.content-home {
+    background-image: url('../images/food-home.webp');
+}
+.content-menu {
+    background-image: url('../images/food-menu.webp');
+}
+.content-contact {
+    background-image: url('../images/food-contact.webp');
 }
 
 ::selection {
