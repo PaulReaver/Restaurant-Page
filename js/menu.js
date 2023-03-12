@@ -53,7 +53,6 @@ for (let i = 0; i < 6; i += 1) {
 
 // Populate menu
 export default function populateMenu() {
-    document.body.style.backgroundImage = "url('../food-menu.webp')";
     content.replaceChildren();
     content.append(mainMenu);
 }
