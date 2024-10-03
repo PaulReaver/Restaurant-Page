@@ -1,5 +1,5 @@
 # Restaurant Page
-Landing page for a fictional restaurant. Includes the menu and contact information. Made for practice as a part of *The Odin Project* curriculum.
+Landing page for a fictional restaurant. Includes the menu and contact information. This was created as part of The Odin Project curriculum.
 
 ## Motivation
 This landing page was designed to: 
